@@ -1,13 +1,53 @@
-# AI Financial Reporter
+# AI Agent for Financial Analysis
 
 This is a small Python tool that helps you quickly create nice financial reports.
 
-You just write a simple sentence (like "show me the top 5 commodities" or "compare gold, silver and oil"), and the program:
+This is a small Python tool that helps you quickly create nice financial reports.
 
-- downloads the latest prices
-- creates comparison charts
-- calculates useful indicators (RSI, volatility, Bollinger Bands…)
-- builds a beautiful HTML report with tables and graphs
+### How it works (simple explanation)
+
+Behind the scenes, the program follows these main steps:
+
+1. You write your question in normal words  
+   (example: "compare gold and silver" or "top 5 tech stocks performance")
+
+2. A small local AI model (Qwen 2.5 3B running with Ollama) reads your sentence  
+   → understands what you want  
+   → chooses which companies or commodities to analyze
+
+3. The program automatically downloads fresh price data  
+   → uses Yahoo Finance (yfinance library)
+
+4. It cleans the data  
+   → removes errors, fixes formats, makes sure dates and numbers are correct
+
+5. It does some quick analysis (EDA)  
+   → calculates basic statistics  
+   → creates a correlation matrix between assets
+
+6. It calculates useful technical indicators  
+   → RSI (overbought / oversold)  
+   → Bollinger Bands  
+   → rolling volatility  
+   → cumulative returns  
+   → moving averages, MACD, etc.
+
+7. It creates clear comparison charts  
+   → price trends side by side  
+   → cumulative performance  
+   → RSI comparison  
+   → volatility comparison  
+   → Bollinger Bands width
+
+8. Finally, it builds a nice HTML report  
+   → summary table for each asset (min / median / max)  
+   → small preview chart for each asset  
+   → big comparison charts  
+   → everything opens in your browser
+
+All of this happens in a few minutes, and every new request creates its own separate folder so nothing gets mixed up.
+
+You don't need to write any code or open spreadsheets — just describe what you want to see.
 
 Everything happens automatically — no need to open Excel or TradingView manually.
 
@@ -62,8 +102,7 @@ More details:
 - Python
 - yfinance (to get market data)
 - pandas, matplotlib, seaborn (for tables and charts)
-- A bit of AI help to understand your question
+- ollama qwen 2.5:3b as a LLM to help to understand the prompt
 
 Enjoy exploring markets visually and quickly!
 
-MIT License

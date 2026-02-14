@@ -2,7 +2,22 @@
 
 This is a small Python tool that helps you quickly create nice financial reports.
 
-This is a small Python tool that helps you quickly create nice financial reports.
+### Summary – quick overview
+
+| File                        | Main job                                      | When it runs                  |
+|-----------------------------|-----------------------------------------------|-------------------------------|
+| `agent.py`                  | Runs everything, coordinates steps            | First (you start here)        |
+| `download_clean.py`         | Downloads + basic cleaning                    | Step 1                        |
+| `data_cleaner.py`           | Cleaning rules                                | Called by download_clean      |
+| `eda_comparative.py`        | Summary stats + correlation matrix            | Step 2                        |
+| `feature_engineering.py`    | Adds technical indicators                     | Step 3                        |
+| `feature_functions.py`      | The actual indicator calculations             | Called by feature_engineering |
+| `viz_comparative.py`        | Creates comparison charts (multi-asset)       | Step 5                        |
+| `report_generator.py`       | Builds the final HTML report                  | Last step                     |
+| `eda_functions.py`          | Single-asset EDA helpers (not main flow)      | Optional / legacy             |
+| `viz_functions.py`          | Single-asset chart helpers (not main flow)    | Optional / legacy             |
+
+All these files work together so that you only need to write a sentence and get a complete financial comparison report without touching the code.
 
 ### How it works (simple explanation)
 

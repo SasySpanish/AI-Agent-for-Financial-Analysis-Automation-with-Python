@@ -2,7 +2,7 @@
 
 This is a small Python tool that helps you quickly create nice financial reports.
 
-### Summary – quick overview
+## Summary – script overview
 
 | File                        | Main job                                      | When it runs                  |
 |-----------------------------|-----------------------------------------------|-------------------------------|
@@ -19,7 +19,7 @@ This is a small Python tool that helps you quickly create nice financial reports
 
 All these files work together so that you only need to write a sentence and get a complete financial comparison report without touching the code.
 
-### How it works (simple explanation)
+## How it works (simple explanation)
 
 Behind the scenes, the program follows these main steps:
 

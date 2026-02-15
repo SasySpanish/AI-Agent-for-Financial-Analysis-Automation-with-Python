@@ -75,10 +75,8 @@ Everything happens automatically — no need to open Excel or TradingView manual
 
 ## Quick examples of what you can ask
 
-- "I want a report on the top 5 commodities"
-- "Compare NVDA, AAPL, MSFT and TSLA"
-- "Gold vs silver vs crude oil in the last 3 years"
-- "Show me the best performing big tech stocks"
+- ["I want a report on the top 5 commodities"](https://sasyspanish.github.io/AI-Agent-for-Financial-Analysis-Automation-with-Python/results/report.html)
+- ["Compare NVDA, AAPL, MSFT and TSLA"](https://sasyspanish.github.io/AI-Agent-for-Financial-Analysis-Automation-with-Python/results/report1.html)
 
 ## How to try it
 

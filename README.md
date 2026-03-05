@@ -117,5 +117,10 @@ More details:
 - pandas, matplotlib, seaborn (for tables and charts)
 - ollama qwen 2.5:3b as a LLM to help to understand the prompt
 
-Enjoy exploring markets visually and quickly!
+---
+
+## Author
+Developed by **[Salvatore Spagnuolo](https://github.com/SasySpanish)**  
+
+---
 
